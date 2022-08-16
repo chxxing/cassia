@@ -1,0 +1,55 @@
+.Wrap {
+    position: relative;
+}
+
+#Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 1900px;
+    /* fixed라서 min-width를 header에 주기 */
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 77px;
+    transition: 0.7s;
+}
+
+#Header.on {
+    background: #000;
+}
+
+.Gnb ul {
+    display: flex;
+    gap: 30px;
+}
+
+.tel {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tel i {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    margin: 0 10px 0 0;
+}
+
+.hhh {
+    height: 200vh;
+}
+
+.screvent {
+    height: 100vh;
+}
+
+#MainVisual {
+    height: 200vh;
+    background: url(../img/bg_intro01.jpg) repeat-x;
+}

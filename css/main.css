@@ -10,6 +10,10 @@ p {
     line-height: 1.45;
 }
 
+body {
+    letter-spacing: -0.025em;
+}
+
 .container {
     display: flex;
     width: 1200px;
@@ -250,4 +254,70 @@ main {
     transform: translate(0, 0);
     opacity: 1;
     transition: 0.5s 1.5s;
+}
+
+#Customer {
+    padding: 100px 0 400px 0;
+    background: url(../img/bg_main2.jpg) no-repeat center bottom/cover;
+    color: #fff;
+    text-align: center;
+}
+
+#Customer h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    line-height: 1.2;
+}
+
+#Customer h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+#Customer p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#Customer .container {
+    gap: 30px;
+}
+
+#Customer .container>div {
+    position: relative;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#Customer .container>div a::after {
+    content: "\e907";
+    font-family: xeicon !important;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    padding: 20px;
+    border: 3px solid #deb887;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#Customer .container>div:hover a::after {
+    content: "\e9d2";
+    border: 3px solid #deb887;
+    background: #deb887;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#Customer .container a {
+    display: block;
+    padding: 100px 30px;
 }

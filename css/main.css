@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid #0ff;
+} */
+
 .Wrap {
     position: relative;
 }
@@ -16,23 +20,30 @@
     color: #fff;
     line-height: 77px;
     transition: 0.7s;
+    z-index: 999;
 }
 
 #Header.on {
     background: #000;
 }
 
-.Gnb ul {
+#Header .Gnb ul {
     display: flex;
     gap: 30px;
 }
 
-.tel {
-    font-size: 30px;
-    font-weight: 700;
+#Header h1 {
+    width: 300px;
 }
 
-.tel i {
+#Header .tel {
+    width: 300px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+}
+
+#Header .tel i {
     border: 2px solid rgba(255, 255, 255, 0.5);
     padding: 10px;
     font-size: 13px;
@@ -41,15 +52,35 @@
     margin: 0 10px 0 0;
 }
 
-.hhh {
-    height: 200vh;
-}
-
-.screvent {
+#MainVisual .MainSlider figure {
     height: 100vh;
+    background: lightblue;
 }
 
-#MainVisual {
-    height: 200vh;
-    background: url(../img/bg_intro01.jpg) repeat-x;
+#MainVisual .MainSlider .itm01 {
+    background: url(../img/bg_intro01.jpg) no-repeat center center/cover;
+}
+
+#MainVisual .MainSlider .itm02 {
+    background: url(../img/bg_intro02.jpg) no-repeat center center/cover;
+}
+
+#MainVisual .MainSlider .itm03 {
+    background: url(../img/bg_intro03.jpg) no-repeat center center/cover;
+}
+
+#MainVisual .swiper-pagination {
+    bottom: 100px;
+}
+
+#MainVisual .swiper-pagination span {
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: #333;
+    opacity: 1;
+}
+
+#MainVisual .swiper-pagination span.swiper-pagination-bullet-active {
+    background: #f00;
 }

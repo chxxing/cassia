@@ -1,7 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    const SCE_ELE = document.querySelectorAll('.screvent');
-
     window.addEventListener('scroll', () => {
         let sct = window.scrollY;
         console.log(sct);
@@ -10,6 +8,21 @@ window.addEventListener('DOMContentLoaded', () => {
             : document.querySelector('#Header').classList.remove('on')
     });
 
+    const MainSlider = new Swiper('.MainSlider', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    })
+
+
+
+    const SCE_ELE = document.querySelectorAll('.screvent');
     window.addEventListener('scroll', () => {
         let sct = window.scrollY;
         SCE_ELE.forEach(el => {
@@ -18,10 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 : el.classList.remove('on')
         })
     });
-
-    const UL = document.querySelector('nav ul');
-    const LI = [...UL.children][1];
-    console.log(LI);
 
 
 

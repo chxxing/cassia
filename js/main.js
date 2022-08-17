@@ -22,11 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    const SCE_ELE = document.querySelectorAll('.screvent');
+    const SCE_ELE = document.querySelectorAll('.active-event');
     window.addEventListener('scroll', () => {
         let sct = window.scrollY;
         SCE_ELE.forEach(el => {
-            sct > el.offsetTop
+            sct > el.offsetTop - 300
                 ? el.classList.add('on')
                 : el.classList.remove('on')
         })
